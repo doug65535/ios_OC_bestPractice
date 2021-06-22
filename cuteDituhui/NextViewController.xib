@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController">
+            <connections>
+                <outlet property="banbenhao" destination="dzf-UO-qj2" id="aCN-wf-nbr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jW-5l-Yiy">
+                    <string key="text">    联系电话：010 -59896993
+      周一至周五：8:30-17:30      
+         官方微博：@地图慧
+         官方微信：dituhui</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-Spotlight-40" translatesAutoresizingMaskIntoConstraints="NO" id="V1o-wZ-FeY"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地图慧1.1.3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzf-UO-qj2">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="V1o-wZ-FeY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="9Hf-KA-ylm"/>
+                <constraint firstItem="dzf-UO-qj2" firstAttribute="top" secondItem="V1o-wZ-FeY" secondAttribute="bottom" constant="10" id="FMT-GD-eHq"/>
+                <constraint firstItem="0jW-5l-Yiy" firstAttribute="top" secondItem="dzf-UO-qj2" secondAttribute="bottom" constant="20" id="HJf-sj-m9o"/>
+                <constraint firstItem="dzf-UO-qj2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NPr-PS-Tgo"/>
+                <constraint firstItem="0jW-5l-Yiy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VeO-Kq-n95"/>
+                <constraint firstItem="V1o-wZ-FeY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jrN-Ky-dv1"/>
+            </constraints>
+            <point key="canvasLocation" x="305" y="302"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon-Spotlight-40" width="40" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

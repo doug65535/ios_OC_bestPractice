@@ -1,0 +1,94 @@
+//
+  -PrefixHeader.pch
+  
+//
+//  Created by lucifer on 16/7/21.
+ 
+//
+
+#ifndef cuteDituhui_PrefixHeader_pch
+#define cuteDituhui_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "AFNetworking.h"
+#import "MJExtension.h"
+
+
+
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
+#import "UIImage+RTTint.h"
+
+#import "MJRefresh.h"
+#import "SVProgressHUD.h"
+
+#import "CDAcount.h"
+#import "CDMapInfo.h"
+#import "CDTeamInfo.h"
+#import "CDLayerInfo.h"
+#import "CDSpreadmapStyle.h"
+
+#import "CDMarkerInfo.h"
+#import "CDLineInfo.h"
+#import "CDZoneInfo.h"
+#import "CDPoint.h"
+
+#import "CDNav.h"
+
+#import "UIView+Frame.h"
+#import "NSString+Dir.h"
+
+#import "CDPartenerInfo.h"
+
+
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>
+#define kHeight [[UIScreen mainScreen] bounds].size.height
+#define kWidth [[UIScreen mainScreen] bounds].size.width
+
+#ifdef DEBUG
+#define CDLog(...) NSLog(__VA_ARGS__)
+#else
+#define CDLog(...)
+#endif
+
+//#define baseUrl @"http://cute.dituhui.com/"
+
+//#define baseUrl @"http://192.168.44.232:8080/cutedituhui/"
+//#define huangUrl @"http://192.168.44.236:8080/cutedituhui/"
+
+//#define baseUrl @"http://112.126.75.94:8050/cutedituhui/"
+
+
+//#define baseUrl @"http://121.199.34.72:8050/"
+
+#define baseUrl @"http://112.126.75.94:8080/cutedituhui/"
+
+//#define baseUrl @"http://192.168.48.228:9018/"
+
+//	#define baseUrl @"http://112.126.75.94:8050/"
+
+#define baseColor [UIColor colorWithRed:68/255.0f green:200/255.0f blue:220/255.0f alpha:1.0f]
+#define baseGary [UIColor colorWithRed:246/255.0f green:246/255.0f blue:246/255.0f alpha:1.0f]
+
+
+
+#import "JPUSHService.h"
+
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+
+#import <AdSupport/AdSupport.h>
+
+#endif 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GH7-FO-jxP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Regist Vc-->
+        <scene sceneID="qPx-fd-cH3">
+            <objects>
+                <viewController id="GH7-FO-jxP" customClass="CDLoginRegistVc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FeU-3y-Z4b"/>
+                        <viewControllerLayoutGuide type="bottom" id="LBe-L1-nnv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8FH-Ku-ct4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVs-4X-DG2">
+                                <rect key="frame" x="41" y="597" width="120" height="60"/>
+                                <state key="normal" image="btn_login"/>
+                                <connections>
+                                    <action selector="loginClick:" destination="GH7-FO-jxP" eventType="touchUpInside" id="Y6b-hs-qyd"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ9-qe-dAH">
+                                <rect key="frame" x="214" y="597" width="120" height="60"/>
+                                <state key="normal" image="btn_logon"/>
+                                <connections>
+                                    <action selector="logonClick:" destination="GH7-FO-jxP" eventType="touchUpInside" id="9Rn-3O-oT1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enB-GM-cMQ" customClass="SDCycleScrollView">
+                                <rect key="frame" x="0.0" y="40" width="375" height="507"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anh-dl-btp">
+                                <rect key="frame" x="137.5" y="597" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.2666666667" green="0.7843137255" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SWq-W0-zRu"/>
+                                </constraints>
+                                <state key="normal" title="立即体验">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginClick:" destination="GH7-FO-jxP" eventType="touchUpInside" id="lSu-yZ-8N2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RVs-4X-DG2" firstAttribute="centerY" secondItem="8FH-Ku-ct4" secondAttribute="centerY" id="1H7-8m-Tzk"/>
+                            <constraint firstItem="anh-dl-btp" firstAttribute="centerX" secondItem="8FH-Ku-ct4" secondAttribute="centerX" id="8YU-Yx-2Pb"/>
+                            <constraint firstItem="anh-dl-btp" firstAttribute="top" secondItem="RVs-4X-DG2" secondAttribute="top" id="DyP-Gx-mfw"/>
+                            <constraint firstAttribute="trailing" secondItem="zZ9-qe-dAH" secondAttribute="trailing" constant="60" id="Fvm-TW-hkO"/>
+                            <constraint firstItem="enB-GM-cMQ" firstAttribute="leading" secondItem="8FH-Ku-ct4" secondAttribute="leading" id="NcM-ul-Rn0"/>
+                            <constraint firstItem="LBe-L1-nnv" firstAttribute="top" secondItem="zZ9-qe-dAH" secondAttribute="bottom" constant="10" id="RAe-Jb-qCc"/>
+                            <constraint firstItem="RVs-4X-DG2" firstAttribute="leading" secondItem="8FH-Ku-ct4" secondAttribute="leading" constant="60" id="Wds-Jq-Lmp"/>
+                            <constraint firstItem="LBe-L1-nnv" firstAttribute="top" secondItem="RVs-4X-DG2" secondAttribute="bottom" constant="10" id="Y7F-Ye-aty"/>
+                            <constraint firstItem="enB-GM-cMQ" firstAttribute="top" secondItem="FeU-3y-Z4b" secondAttribute="bottom" constant="20" id="b2w-9K-Cej"/>
+                            <constraint firstAttribute="trailing" secondItem="enB-GM-cMQ" secondAttribute="trailing" id="h1T-VP-FTC"/>
+                            <constraint firstItem="RVs-4X-DG2" firstAttribute="leading" secondItem="8FH-Ku-ct4" secondAttribute="leadingMargin" constant="25" id="lp6-iv-hN8"/>
+                            <constraint firstItem="zZ9-qe-dAH" firstAttribute="top" secondItem="enB-GM-cMQ" secondAttribute="bottom" constant="50" id="ulm-iv-sOr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zZ9-qe-dAH" secondAttribute="trailing" constant="25" id="vZO-gG-DaZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1H7-8m-Tzk"/>
+                                <exclude reference="Wds-Jq-Lmp"/>
+                                <exclude reference="Fvm-TW-hkO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cycleScrollView" destination="enB-GM-cMQ" id="sLT-Oy-NPB"/>
+                        <outlet property="login" destination="RVs-4X-DG2" id="v3Q-mF-g9d"/>
+                        <outlet property="logon" destination="zZ9-qe-dAH" id="dNB-sL-YN4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmj-qB-asi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="-154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_login" width="120" height="60"/>
+        <image name="btn_logon" width="120" height="60"/>
+    </resources>
+</document>

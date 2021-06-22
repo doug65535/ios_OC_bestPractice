@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dzq-Qc-lop">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title Eidt View Controller-->
+        <scene sceneID="gzA-Yv-AWh">
+            <objects>
+                <viewController id="dzq-Qc-lop" customClass="titleEidtViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wuT-Cd-69A"/>
+                        <viewControllerLayoutGuide type="bottom" id="s1m-dP-SZR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dR4-7t-xUa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MYd-c1-eIH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GvN-WA-eXj"/>
+                                    <constraint firstAttribute="height" constant="50" id="Vhh-SI-pXC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vhh-SI-pXC"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MYd-c1-eIH" firstAttribute="top" secondItem="wuT-Cd-69A" secondAttribute="bottom" id="4qs-Gl-YxG"/>
+                            <constraint firstItem="MYd-c1-eIH" firstAttribute="top" secondItem="wuT-Cd-69A" secondAttribute="bottom" constant="20" id="B9N-vo-9eU"/>
+                            <constraint firstAttribute="trailing" secondItem="MYd-c1-eIH" secondAttribute="trailing" id="dZk-r7-bLN"/>
+                            <constraint firstItem="MYd-c1-eIH" firstAttribute="leading" secondItem="dR4-7t-xUa" secondAttribute="leading" id="g3e-0D-BJL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4qs-Gl-YxG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textFiled" destination="MYd-c1-eIH" id="Rcr-z1-8DX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nwE-d1-Wap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="126"/>
+        </scene>
+    </scenes>
+</document>
